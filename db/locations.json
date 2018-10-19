@@ -4,43 +4,50 @@
             "Image":"https://cdn-images-1.medium.com/max/2000/1*0PtawL0PsFcZXSuYED_QeQ.jpeg",
             "Name": "Bomb",
             "Address": "123 Shady Ln", 
-            "Time": "2:00 PM"
+            "Time": "7:00 PM",
+            "TimeOfDay": "Evening"
         },
         {
             "Image":"https://i.cbc.ca/1.3358248.1449753349!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/inner-city.jpg",
             "Name": "Nolensville Rd",
             "Address": "321 Way way", 
-            "Time": "1:00 AM"
+            "Time": "1:00 AM",
+            "TimeOfDay": "Afternoon"
         },
         {
             "Image":"https://lh3.googleusercontent.com/_cYb_6Zw3-KDU2Bhlf-XM3PkcE1GVR001IONVps_CT7zLpexNVMnK4K5L3-KORGbr_0mFhmFgdMo1CDGKKPjZE-I_wtIFeKi=s750",
             "Name": "Jay Running",
             "Address": "52 Truth ford Rd", 
-            "Time": "3:22 PM"
+            "Time": "3:22 PM",
+            "TimeOfDay": "Afternoon"
         },
         {
             "Image":"http://doingthebestican.com/wp-content/uploads/2014/04/KE011-e1416254458864.jpg",
             "Name": "Tom Dead",
             "Address": "783 For Rd", 
-            "Time": "9:33 PM"
+            "Time": "9:33 PM",
+            "TimeOfDay": "Dark"
         },
         {
             "Image":"https://archinect.imgix.net/uploads/gn/gn59ehxi6fk3oi0n.jpg?auto=compress%2Cformat",
             "Name": "Corner Shooting",
             "Address": "8 Friend Taco", 
-            "Time": "3:12 PM"
+            "Time": "3:12 PM",
+            "TimeOfDay": "Afternoon"
         },
         {
             "Image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAtAUGrfylh7YNeKpmn9fbAVH7jjl_YqyMBdmmJj6LLkzMlVBE",
             "Name": "Department Store",
             "Address": "410 Yuma", 
-            "Time": "12:02 AM"
+            "Time": "12:02 AM",
+            "TimeOfDay": "Afternoon"
         },
         {
             "Image":"https://2.bp.blogspot.com/_v-MmMXY8Uo8/SenWxU5V3jI/AAAAAAAAAQo/zGYk16e4qVA/s640/elbronx-152795010.jpg",
             "Name": "Wall Painting",
             "Address": "4223 Walker Town Rd", 
-            "Time": "7:23 AM"
+            "Time": "7:23 AM",
+            "TimeOfDay": "Morning"
         }
         
       
