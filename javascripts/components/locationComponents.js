@@ -26,4 +26,4 @@ const writeMovie2 = (arrayOfMovie) => {
 };
 
 
-export {writeMovie2}
+export{writeMovie2}

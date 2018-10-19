@@ -13,11 +13,16 @@ const writeMovie = (arrayOfMovie) => {
               <h6 id="date1">Date Release : ${movie.Name}</h6>
               <h6 id="description1">Description : ${movie.Description}</h6>
         </div>
-        <button class="Morning btn btn-danger" id="morning">Morning</button>
-        <button class="Afternoon btn btn-danger" id="afternoon">Afternoon</button>
-        <button class="Evening btn btn-danger" id="evening">Evening</button>
-        <button class="Dark btn btn-danger" id="dark">After Dark</button>
+        <button class="btn btn-danger" id="morning">Morning</button>
+        <button class="btn btn-danger" id="afternoon">Afternoon</button>
+        <button class="btn btn-danger" id="evening">Evening</button>
+        <button class="btn btn-danger" id="dark">After Dark</button>
+        <button class="btn btn-danger" id="all">Print All</button>
         </div>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        </div>
+
   </div>
       `
     })
