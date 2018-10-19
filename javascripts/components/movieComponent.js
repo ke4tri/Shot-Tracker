@@ -20,7 +20,7 @@ const writeMovie = (arrayOfMovie) => {
         <button class="btn btn-danger" id="all">Print All</button>
         </div>
         <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <input type="text" id="myInput" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
         </div>
 
   </div>
