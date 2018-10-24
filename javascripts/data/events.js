@@ -1,5 +1,5 @@
-import {writeMovie} from "../javascripts/components/movieComponent.js"
-import {writeMovie2} from "../javascripts/components/locationComponents.js"
+import {writeMovie} from "../components/movieComponent.js"
+import {writeMovie2} from "../components/locationComponents.js"
 
 // Load Location
 
@@ -12,14 +12,6 @@ const locationPrint = () => {
   console.error(error);
 }); 
 }
-
-// $.get('../db/locations.json')
-// .done((data) => {
-//   writeMovie2(data.locations)
-// })
-// .fail((error) => {
-//   console.error(error);
-// }); 
 
 locationPrint();
 // Load Movie
