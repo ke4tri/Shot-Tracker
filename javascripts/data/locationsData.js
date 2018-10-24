@@ -1,10 +1,11 @@
-import {locationPrint} from "../events.js"
-
-//NEED TO MAKE THE BELOW ONE FUNCTION THAT IS CALLED
-//BASED OFF OF THE ID VALUE OF THE E.TARGET
-//COULD JUST PASS THE E.ID FROM E TO THE FUNCTION AS A PARAMETER?
+import {locationPrint} from "../data/events.js"
 
 $('body').on('click', 'button#all', (e) => {
+  // HAVE TO ADD THE OTHER 
+    $('.Afternoon').hide();
+    $('.Dark').hide();
+    $('.Evening').hide();
+    $('.Morning').hide();
     locationPrint();
   })
 

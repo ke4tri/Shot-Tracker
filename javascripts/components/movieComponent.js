@@ -1,11 +1,25 @@
 
+const writeMovie3 = () => {
+   let domString = `<div>
+<button class="btn btn-danger" id="morning">Morning</button>
+<button class="btn btn-danger" id="afternoon">Afternoon</button>
+<button class="btn btn-danger" id="evening">Evening</button>
+<button class="btn btn-danger" id="dark">After Dark</button>
+<button class="btn btn-danger" id="all">Print All</button>
+</div>
+<div class="input-group mb-3">
+    <input type="text" id="myInput" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+</div>
+`
+$("#movieLine2").html(domString);
+}
 
 // Add fish to "Basket"
 const writeMovie = (arrayOfMovie) => {
     let domString = '';
     arrayOfMovie.forEach((movie) => {
       domString += `
-      <div class="movieClass col-md-6 col-md-offset-3">
+      <div class="movieClass col-md-6 col-md-offset-3 mb-5 border border-success">
       <div class="thumbnail">
           <div class="caption">
               <h6 id="name1">Name : ${movie.Name}</h6>
@@ -13,21 +27,12 @@ const writeMovie = (arrayOfMovie) => {
               <h6 id="date1">Date Release : ${movie.Name}</h6>
               <h6 id="description1">Description : ${movie.Description}</h6>
         </div>
-        <button class="btn btn-danger" id="morning">Morning</button>
-        <button class="btn btn-danger" id="afternoon">Afternoon</button>
-        <button class="btn btn-danger" id="evening">Evening</button>
-        <button class="btn btn-danger" id="dark">After Dark</button>
-        <button class="btn btn-danger" id="all">Print All</button>
         </div>
-        <div class="input-group mb-3">
-            <input type="text" id="myInput" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-        </div>
-
   </div>
       `
     })
+    writeMovie3()
     $("#movieLine").append(domString);
 };
-
 
 export {writeMovie}
