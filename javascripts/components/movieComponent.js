@@ -22,7 +22,7 @@ const writeMovie = (arrayOfMovie) => {
             <div class="movieClass">
         <div class="thumbnail">
             <div class="caption justify-content-center">
-                <img src="${movie.Image}" alt="${movie.Name}" height="auto" width="198">
+                <img src="${movie.Image}" alt="${movie.Name}" height="auto" width="193">
                 <h6 id="name1">Name : ${movie.Name}</h6>
                 <h6 id="genre1">Genre : ${movie.Genre}</h6>
                 <h6 id="date1">Date Release : ${movie.Name}</h6>
