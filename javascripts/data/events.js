@@ -1,7 +1,6 @@
 import {writeMovie} from "../components/movieComponent.js"
 import {writeMovie2} from "../components/locationComponents.js"
 
-
 // Load Location
 
 const locationPrint = () => {
@@ -18,7 +17,6 @@ const locationPrint = () => {
 };
 
 locationPrint(); //instead of calling it here put it in a Promise as another .js file
-
 
 const moviePrint = () => {
   return new Promise((resolve, reject) => {
@@ -44,12 +42,5 @@ const moviePrintCall = () =>{
     });
 };
 
-export {moviePrintCall}
 
-
-
-
-
-
-
-export {locationPrint};
+export {locationPrint,moviePrintCall};

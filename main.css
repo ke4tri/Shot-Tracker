@@ -1,3 +1,25 @@
-.row {
-    border: 1px solid black;
+body{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ3g3SO-nC7-HfGvM45HVKP-d9KtDIjx1Cgjrtj3ZCl8DBGV9l")    
+    /* background-color: oldlace; */
 }
+
+.movieClass {
+    border: black double 4px;
+    background-color: whitesmoke;
+    width: 200px;
+    height: auto;
+     /* justify-content:space-around;  */
+}
+
+.moveCards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.locationCards{
+    display: flex;
+    /* flex-direction: row; */
+   
+    /* justify-content: space-evenly;
+}
+
