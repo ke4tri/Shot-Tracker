@@ -3,6 +3,17 @@ body{
     /* background-color: oldlace; */
 }
 
+.row {
+    
+}
+
+.moveCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
 .movieClass {
     border: black double 4px;
     background-color: whitesmoke;
@@ -11,15 +22,21 @@ body{
      /* justify-content:space-around;  */
 }
 
-.moveCards {
-    display: flex;
-    flex-wrap: wrap;
-}
 
 .locationCards{
     display: flex;
-    /* flex-direction: row; */
-   
-    /* justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
 }
 
+.divWrapper {
+    width: 400px;
+    height: auto;
+    border: 3px solid black;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+.centerText {
+    text-align: center;
+}

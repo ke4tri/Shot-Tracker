@@ -19,17 +19,17 @@ const writeMovie = (arrayOfMovie) => {
     let domString = '';
     arrayOfMovie.forEach((movie) => {
       domString += `
-      <div class="movieClass   ">
+            <div class="movieClass">
         <div class="thumbnail">
             <div class="caption justify-content-center">
-            <img src="${movie.Image}" alt="${movie.Name}" height="auto" width="198">
+                <img src="${movie.Image}" alt="${movie.Name}" height="auto" width="198">
                 <h6 id="name1">Name : ${movie.Name}</h6>
                 <h6 id="genre1">Genre : ${movie.Genre}</h6>
                 <h6 id="date1">Date Release : ${movie.Name}</h6>
                 <h6 id="description1">Description : ${movie.Description}</h6>
             </div>
         </div>
-  </div>
+        </div>
       `
     })
     writeMovie3()
