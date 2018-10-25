@@ -1,11 +1,19 @@
 import {locationPrint} from "../data/events.js"
 
-$('body').on('click', 'button#all', (e) => {
-  // HAVE TO ADD THE OTHER 
-    $('.Afternoon').hide();
+const hideAll = () => {
+  $('.Afternoon').hide();
     $('.Dark').hide();
     $('.Evening').hide();
     $('.Morning').hide();
+    locationPrint();
+}
+
+$('body').on('click', 'button#all', (e) => {
+  // HAVE TO ADD THE OTHER 
+    $('.Afternoon').remove();
+    $('.Dark').remove();
+    $('.Evening').remove();
+    $('.Morning').remove();
     locationPrint();
   })
 
@@ -32,3 +40,5 @@ $('body').on('click', 'button#all', (e) => {
     $('.Afternoon').hide();
     $('.Dark').hide();
   })
+
+  export {hideAll}

@@ -5,7 +5,7 @@ const writeMovie2 = (arrayOfMovie) => {
     let domString = '';
     arrayOfMovie.forEach((location) => {
         domString += `
-         <div id="divWrap" class="divWrapper ${location.TimeOfDay} delete">
+         <div id="divWrap" class="divWrapper delete ${location.TimeOfDay}">
         <div class="${location.TimeOfDay} delete "
         <div class="thumbnail">
             <img src="${location.Image}"
