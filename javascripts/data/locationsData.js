@@ -1,34 +1,47 @@
 import {locationPrint} from "../data/events.js"
 
-$('body').on('click', 'button#all', (e) => {
-  // HAVE TO ADD THE OTHER 
-    $('.Afternoon').hide();
+//May play with the show() method instead of the hide() below
+
+
+const hideAll = () => {
+  $('.Afternoon').hide();
     $('.Dark').hide();
     $('.Evening').hide();
     $('.Morning').hide();
     locationPrint();
+}
+
+$('body').on('click', 'button#all', (e) => {
+  // HAVE TO ADD THE OTHER 
+    $('.Afternoon').remove();
+    $('.Dark').remove();
+    $('.Evening').remove();
+    $('.Morning').remove();
+    locationPrint();
   })
 
   $('body').on('click', 'button#morning', (e) => {
-    $('.Afternoon').hide();
-    $('.Dark').hide();
-    $('.Evening').hide();
+    $('.Afternoon').remove();
+    $('.Dark').remove();
+    $('.Evening').remove();
   })
 
   $('body').on('click', 'button#afternoon', (e) => {
-    $('.Morning').hide();
-    $('.Dark').hide();
-    $('.Evening').hide();
+    $('.Morning').remove();
+    $('.Dark').remove();
+    $('.Evening').remove();
   })
 
   $('body').on('click', 'button#dark', (e) => {
-    $('.Morning').hide();
-    $('.Afternoon').hide();
-    $('.Evening').hide();
+    $('.Morning').remove();
+    $('.Afternoon').remove();
+    $('.Evening').remove();
   })
   
   $('body').on('click', 'button#evening', (e) => {
-    $('.Morning').hide();
-    $('.Afternoon').hide();
-    $('.Dark').hide();
+    $('.Morning').remove();
+    $('.Afternoon').remove();
+    $('.Dark').remove();
   })
+
+  export {hideAll}

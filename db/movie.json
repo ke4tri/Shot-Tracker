@@ -1,18 +1,21 @@
 {
     "movie":[
         {
+            "Image":"https://i.pinimg.com/236x/c8/a6/89/c8a6899d09932c5e75f8e0c50f06969c--nosferatu-the-vampyre-werner-herzog.jpg",
             "Name":"Falling",
             "Genre": "Western",
             "DateRelease": "March 5, 2019", 
             "Description": "A man broken and in need of love. Wanted to make things write with the people he knew but there was a catch. He didn't know any poeple"
         },
         {
+            "Image":"https://pre00.deviantart.net/e979/th/pre/i/2014/331/8/c/nosferatu_speedpaint_by_disse86-d87vypu.jpg",
             "Name":"Standing",
             "Genre": "City Movie",
             "DateRelease": "April 3, 2030", 
             "Description": "There are a million people and this one man is going to kill them all. "
         },
         {
+            "Image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxnMEk8PNkHldMWE2JfOQIwAFnGBR4sx-uWjbX41_itQ87m5Od",
             "Name":"Sleeping",
             "Genre": "Silent",
             "DateRelease": "March 9, 2022", 
