@@ -27,7 +27,8 @@ const writeMovie = (arrayOfMovie) => {
                 <h6 id="genre1">Genre : ${movie.Genre}</h6>
                 <h6 id="date1">Date Release : ${movie.Name}</h6>
                 <h6 id="description1">Description : ${movie.Description}</h6>
-            </div>
+                <h7 id="locations"> Locations: ${movie.locations.length}</h7>
+                </div>
         </div>
         </div>
       `

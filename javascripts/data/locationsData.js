@@ -1,5 +1,6 @@
 import {locationPrint} from "../data/events.js"
 
+//Work on making this just one function (or a few)
 //May play with the show() method instead of the hide() below
 
 
