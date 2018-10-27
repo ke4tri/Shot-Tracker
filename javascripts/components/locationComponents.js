@@ -1,5 +1,5 @@
-
-
+import {inputListen} from "../data/movieData.js"
+//import {rePrintLocations} from "../data/locationsData"
 // Add fish to "Basket"
 const writeMovie2 = (arrayOfMovie) => {
     let domString = '';
@@ -23,7 +23,8 @@ const writeMovie2 = (arrayOfMovie) => {
   </div>
       `
     })
-    $("#available").append(domString);
+    $("#available").html(domString);
+     inputListen();
 };
 
 

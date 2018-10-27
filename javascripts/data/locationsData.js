@@ -21,6 +21,17 @@ $('body').on('click', 'button#all', (e) => {
     locationPrint();
   })
 
+  const rePrintLocations = () => {
+    
+      // HAVE TO ADD THE OTHER 
+        $('.Afternoon').remove();
+        $('.Dark').remove();
+        $('.Evening').remove();
+        $('.Morning').remove();
+        locationPrint();
+      
+  }
+
   $('body').on('click', 'button#morning', (e) => {
     $('.Afternoon').remove();
     $('.Dark').remove();
@@ -45,4 +56,4 @@ $('body').on('click', 'button#all', (e) => {
     $('.Dark').remove();
   })
 
-  export {hideAll}
+  export {rePrintLocations}
