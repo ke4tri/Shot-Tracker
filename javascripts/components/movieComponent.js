@@ -14,7 +14,6 @@ const writeMovie3 = () => {
 $("#movieLine2").html(domString);
 }
 
-// Add fish to "Basket"
 const writeMovie = (arrayOfMovie) => {
     let domString = '';
     arrayOfMovie.forEach((movie) => {
