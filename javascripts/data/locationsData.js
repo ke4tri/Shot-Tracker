@@ -1,5 +1,6 @@
 import {locationPrint} from "../data/events.js"
 
+//Work on making this just one function (or a few)
 //May play with the show() method instead of the hide() below
 
 
@@ -19,6 +20,17 @@ $('body').on('click', 'button#all', (e) => {
     $('.Morning').remove();
     locationPrint();
   })
+
+  const rePrintLocations = () => {
+    
+      // HAVE TO ADD THE OTHER 
+        $('.Afternoon').remove();
+        $('.Dark').remove();
+        $('.Evening').remove();
+        $('.Morning').remove();
+        locationPrint();
+      
+  }
 
   $('body').on('click', 'button#morning', (e) => {
     $('.Afternoon').remove();
@@ -44,4 +56,4 @@ $('body').on('click', 'button#all', (e) => {
     $('.Dark').remove();
   })
 
-  export {hideAll}
+  export {rePrintLocations}
