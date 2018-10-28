@@ -1,4 +1,5 @@
 import {moviePrint,loadLocationsOnMovie,locationPrint} from "../data/events.js"
+import {initializeApp} from "../main.js"
 
 const locationPrint2 = (locationCard,passEvent2) => {
     locationCard.forEach(location => { 
@@ -22,17 +23,43 @@ const locationPrint2 = (locationCard,passEvent2) => {
                     </div>`
         }
         $("#newLocationDom").append(domString);
+        
     }) 
+    backButton();
 };
 
-//event.currentTarget.lastElementChild.lastElementChild.childNodes[3].id.value
-//const clickedBoardId = $(e.target).closest('.board-card').attr('id')
+const backResetFunction = () => {
+    const domString2 = `<div id="oldWrappingDiv" >
+<h1 class="text-center">Movie Details</h1>
+<div class="row">
+    <div id="movieLine" class=" moveCards col p-2 ">
+    </div>
+</div>
+<div>
+    <div id="movieLine2" class="col"></div>
+</div>
+<h1 class="text-center">Shot Locations</h1>
+<div id="available" class="locationCards ">
+</div>
+</div>`
+$('#backNormal').append(domString2);
+}
+
+const backButton = () => {
+    $('body').on('click', 'button#back', (e) => {
+        $('#newWrappingDiv').remove();
+        backResetFunction();
+        initializeApp();
+      })
+}
+
 const writeMovie2 = (arrayOfMovie,newEvent) => {
   let domString = '';
   arrayOfMovie.forEach((movie) => {
        if(movie.Name === newEvent) {
     let movieLocationName = `${movie.Name}`;
     domString += `
+    <button class="btn btn-danger" id="back">Back</button>
     <div class="movieClass">
         <div class="thumbnail">
             <div class="caption justify-content-center">
@@ -53,11 +80,6 @@ const writeMovie2 = (arrayOfMovie,newEvent) => {
   $("#newMovieDom").append(domString); //CHANGE FROM .APPEND TO .HTML
   newLocationCards(newEvent);
 };
-
-//// isolating the event listiner to push into locaion /////
-// const passingEvent = (event) => {
-
-// };
 
 /////// gets info for movie cards builder ////////
 const moviePrintCall2 = (event) =>{   
