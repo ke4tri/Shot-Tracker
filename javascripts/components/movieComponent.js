@@ -19,18 +19,17 @@ const writeMovie = (arrayOfMovie) => {
     arrayOfMovie.forEach((movie) => {
       domString += `
             <div class="movieClass">
-        <div class="thumbnail">
-            <div class="caption justify-content-center">
-                <img src="${movie.Image}" alt="${movie.Name}" height="auto" width="193">
-                <h6 id="name1">Name : ${movie.Name}</h6>
-                <h6 id="genre1">Genre : ${movie.Genre}</h6>
-                <h6 id="date1">Date Release : ${movie.Name}</h6>
-                <h6 id="description1">Description : ${movie.Description}</h6>
-                <h7 id="locations"> Locations: ${movie.locations.length}</h7>
+                <div class="thumbnail">
+                    <div class="caption justify-content-center">
+                        <img src="${movie.Image}" alt="${movie.Name}" height="auto" width="193">
+                        <h6 id="name1">${movie.Name}</h6>
+                        <h6 id="genre1">Genre : ${movie.Genre}</h6>
+                        <h6 id="date1">Date Release : ${movie.Name}</h6>
+                        <h6 id="description1">Description : ${movie.Description}</h6>
+                        <h7 id="locations"> Locations: ${movie.locations.length}</h7>
+                    </div>
                 </div>
-        </div>
-        </div>
-      `
+           </div>`
     })
     writeMovie3()
     $("#movieLine").append(domString);

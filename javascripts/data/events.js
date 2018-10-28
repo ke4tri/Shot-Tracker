@@ -62,4 +62,4 @@ const moviePrintCall = () =>{
 };
 
 
-export {locationPrint,moviePrintCall};
+export {locationPrint,moviePrintCall,moviePrint,loadLocationsOnMovie};

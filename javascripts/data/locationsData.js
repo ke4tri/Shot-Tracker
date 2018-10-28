@@ -17,37 +17,36 @@ $('body').on('click', 'button#all', (e) => {
     locationPrint();
   })
 
-  const rePrintLocations = () => {
-    // HAVE TO ADD THE OTHER 
-        $('.Afternoon').remove();
-        $('.Dark').remove();
-        $('.Evening').remove();
-        $('.Morning').remove();
-        locationPrint();
-  }
+const rePrintLocations = () => {
+      $('.Afternoon').remove();
+      $('.Dark').remove();
+      $('.Evening').remove();
+      $('.Morning').remove();
+      locationPrint();
+}
 
-  $('body').on('click', 'button#morning', (e) => {
-    $('.Afternoon').remove();
-    $('.Dark').remove();
-    $('.Evening').remove();
-  })
+$('body').on('click', 'button#morning', (e) => {
+  $('.Afternoon').remove();
+  $('.Dark').remove();
+  $('.Evening').remove();
+})
 
-  $('body').on('click', 'button#afternoon', (e) => {
-    $('.Morning').remove();
-    $('.Dark').remove();
-    $('.Evening').remove();
-  })
+$('body').on('click', 'button#afternoon', (e) => {
+  $('.Morning').remove();
+  $('.Dark').remove();
+  $('.Evening').remove();
+})
 
-  $('body').on('click', 'button#dark', (e) => {
-    $('.Morning').remove();
-    $('.Afternoon').remove();
-    $('.Evening').remove();
-  })
-  
-  $('body').on('click', 'button#evening', (e) => {
-    $('.Morning').remove();
-    $('.Afternoon').remove();
-    $('.Dark').remove();
-  })
+$('body').on('click', 'button#dark', (e) => {
+  $('.Morning').remove();
+  $('.Afternoon').remove();
+  $('.Evening').remove();
+})
+
+$('body').on('click', 'button#evening', (e) => {
+  $('.Morning').remove();
+  $('.Afternoon').remove();
+  $('.Dark').remove();
+})
 
   export {rePrintLocations}

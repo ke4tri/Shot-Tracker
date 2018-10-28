@@ -1,74 +1,47 @@
-// import {writeMovie} from "../components/movieComponent.js"
-// import {writeMovie2} from "../components/locationComponents.js"
+import {moviePrint,loadLocationsOnMovie} from "../data/events.js"
 
-// Load Location
+//event.currentTarget.lastElementChild.lastElementChild.childNodes[3].id.value
+//const clickedBoardId = $(e.target).closest('.board-card').attr('id')
+const writeMovie2 = (arrayOfMovie,newEvent) => {
+  let domString = '';
+  arrayOfMovie.forEach((movie) => {
+       if(movie.Name === newEvent)
+    domString += `
+    <div class="movieClass">
+        <div class="thumbnail">
+            <div class="caption justify-content-center">
+                <img src="${movie.Image}" alt="${movie.Name}" height="auto" width="193">
+                <h6 id="name1">${movie.Name}</h6>
+                <h6 id="genre1">Genre : ${movie.Genre}</h6>
+                <h6 id="date1">Date Release : ${movie.Name}</h6>
+                <h6 id="description1">Description : ${movie.Description}</h6>
+                <h7 id="locations"> Locations: ${movie.locations.length}</h7>
+            </div>
+        </div>
+    </div>`
+  })
+ // writeMovie3()
+  $("#newMovieDom").append(domString); //CHANGE FROM .APPEND TO .HTML
+};
 
-// const locationPrint = () => {
-//   return new Promise((resolve, reject)=> {
-//       $.get('../db/locations.json')
-//     .done((data) => {
-//      resolve( writeMovie2(data.locations)) //
-//     })
-//     .fail((error) => {
-//       console.error(error);
-//       reject(error)
-//     }); 
-//     })
-// };
+const moviePrintCall2 = (event) =>{   
+    const newEvent = event.currentTarget.lastElementChild.lastElementChild.childNodes[3].innerText
 
-// locationPrint(); 
+  moviePrint().then((data2) => {
+      return loadLocationsOnMovie(data2.movie)
+  })
+  .then((moviePins)=>{
+      writeMovie2(moviePins,newEvent) //SHOULD IMPORT FROM THE RETURN OF THE FUNC
+  })
+  .catch((error)=>{
+      console.error(error);
+  });
+};
 
-// const moviePrint = () => {
+//THIS WILL BE BUILDING MY EVENTS FOR THE NEW DOM 
+$('body').on('click', '.movieClass', (event) => {
+  $('#oldWrappingDiv').remove();
+  moviePrintCall2(event);
+  
 
-//   return new Promise((resolve, reject) => {
-//       $.get('../db/movie.json')
-//         .done((data2) => {
-//           resolve(data2)
-//       })    
-//       .fail((error) => {
-//         console.error(error);
-//         reject(error)
-//       });  
-//   })
-// }
-
-
-// const loadLocationsOnMovie = (movie) => {
-//     return new Promise((resolve, reject)=> {
-//         $.get('../db/locations.json')
-//             .done((data) => {
-//                 const moviePins = movie.map(discriptions => {
-//                     const matchingMovies = data.locations.filter(location =>location.Movie == discriptions.Name);
-//                     discriptions.locations = matchingMovies;
-//                     return discriptions
-//                 })
-//                 resolve(moviePins);
-//                  //resolve( writeMovie2(data.locations)) //
-//       })
-//       .fail((error) => {
-//         console.error(error);
-//         reject(error)
-//       }); 
-//       })
-// };
-
-// const moviePrintCall = () =>{   
-//     moviePrint().then((data2) => {
-//         return loadLocationsOnMovie(data2)
-//     })
-//     .then((data2)=>{
-//         writeMovie(data2.movie)
-//         console.log("done")
-//     })
-//     .catch((err)=>{
-//         console.error(err);
-//     });
-// };
-
-
-//ti++;
-//if data[i].Movie === data2[i].Name 
-//then data[i].
-// call and construct data for the new DOM print 
-
-//export {locationPrint,moviePrintCall};
+  })
