@@ -7,3 +7,5 @@ const initializeApp = () => {
 }
 
 initializeApp();
+
+export {initializeApp}
