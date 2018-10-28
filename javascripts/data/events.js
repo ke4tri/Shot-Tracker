@@ -41,7 +41,6 @@ const loadLocationsOnMovie = (movie) => {
                     return movie1
                 })
                 resolve(moviePins);
-                 //resolve( writeMovie2(data.locations)) //
       })
       .fail((error) => {
         console.error(error);
@@ -56,7 +55,6 @@ const moviePrintCall = () =>{
     })
     .then((moviePins)=>{
         writeMovie(moviePins)
-        console.log("done")
     })
     .catch((err)=>{
         console.error(err);
@@ -64,4 +62,4 @@ const moviePrintCall = () =>{
 };
 
 
-export {locationPrint,moviePrintCall};
+export {locationPrint,moviePrintCall,moviePrint,loadLocationsOnMovie};

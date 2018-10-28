@@ -1,6 +1,5 @@
 import {inputListen} from "../data/movieData.js"
-//import {rePrintLocations} from "../data/locationsData"
-// Add fish to "Basket"
+
 const writeMovie2 = (arrayOfMovie) => {
     let domString = '';
     arrayOfMovie.forEach((location) => {
@@ -26,6 +25,5 @@ const writeMovie2 = (arrayOfMovie) => {
     $("#available").html(domString);
      inputListen();
 };
-
 
 export{writeMovie2}
